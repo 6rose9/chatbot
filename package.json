@@ -4,9 +4,11 @@
   "description": "openai",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "type": "module",
+  "private": "true",
   "scripts": {
+    "build": "webpack",
+    "serve": "webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -17,7 +19,7 @@
   },
   "devDependencies": {
     "typescript": "^5.9.3",
-    "webpack": "^5.110.3",
+    "webpack": "^5.111.1",
     "webpack-cli": "^7.2.3",
     "webpack-dev-server": "^6.0.0"
   }
